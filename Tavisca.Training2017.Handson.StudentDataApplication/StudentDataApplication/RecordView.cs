@@ -44,7 +44,6 @@ namespace Assignment
                     StudentDetails studentdetails = new StudentDetails();
                     Stream stream = File.Open(s, FileMode.Open);
                     BinaryFormatter bformatter = new BinaryFormatter();
-                    Console.WriteLine("Reading Employee Information");
                     studentdetails = (StudentDetails)bformatter.Deserialize(stream);
                     stream.Close();
                     DisplayDetails displaydetails = new DisplayDetails();
