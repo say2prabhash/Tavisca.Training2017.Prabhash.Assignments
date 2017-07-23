@@ -11,10 +11,8 @@ namespace Assignment
     {
         static void Main(string[] args)
         {
-            DirectoryCreation directorycreation = new DirectoryCreation();
-            directorycreation.CreateDirectory();
-            
-            //  RecordCreation record = new RecordCreation();
+            OperationOptions operations = new OperationOptions();
+            operations.Operations();
         }
     }
 }

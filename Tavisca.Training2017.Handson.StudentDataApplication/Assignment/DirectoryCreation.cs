@@ -9,18 +9,18 @@ namespace Assignment
 {
     class DirectoryCreation
     {
-        string path = @"D:\Student";
+        string directorypath = @"D:\Student";
         public void CreateDirectory()
         {
-            if (!Directory.Exists(path))
+            if (!Directory.Exists(directorypath))
             {
-                DirectoryInfo directorycreation = new DirectoryInfo(path);
+                DirectoryInfo directorycreation = new DirectoryInfo(directorypath);
                 directorycreation.Create();
                
                 
             }
-            RecordCreation record = new RecordCreation();
-            record.CreateStudentFile(path);
+            StudentDetails studentdetails = new StudentDetails();
+            studentdetails.InputDetails(directorypath);
 
         }
     }
