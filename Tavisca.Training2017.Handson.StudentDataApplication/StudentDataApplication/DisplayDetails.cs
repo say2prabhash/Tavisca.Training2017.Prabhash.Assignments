@@ -21,6 +21,7 @@ namespace Assignment
             Console.WriteLine("Emergency Contact Number:{0}", studentdetails.emergencyContact);
             Console.WriteLine();
             Console.WriteLine();
+           
         }
     }
 }
