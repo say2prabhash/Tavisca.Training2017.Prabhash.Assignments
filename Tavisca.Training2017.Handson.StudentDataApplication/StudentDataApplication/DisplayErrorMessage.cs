@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment
 {
-    class DisplayErrorMessage
+    class DisplayErrorMessage //This class contains methods for displaying various error messages encountered by other methods.
     {
         public void DisplayFileAlreadyExists(string path)
         {

@@ -8,7 +8,7 @@ namespace Assignment
 {
     class OperationOptions
     {
-        public void Operations()
+        public void Operations()  //This function displays the actions as an option available to the user.
         {
             bool loop = true;
             while (loop)

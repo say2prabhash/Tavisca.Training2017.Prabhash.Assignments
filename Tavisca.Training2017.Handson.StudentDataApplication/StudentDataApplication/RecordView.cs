@@ -10,7 +10,7 @@ namespace Assignment
 {
     class RecordView
     {
-        public void ViewAllRecord()
+        public void ViewAllRecord() //This method accesses all the student files present in the specified directory.
         {
             StudentDetails studentdetails = new StudentDetails();
             string[] allFiles = Directory.GetFiles(@"D:\Student");
@@ -38,7 +38,7 @@ namespace Assignment
                 display.DisplayDirectoryIsEmpty();
             }
         }
-        public void ViewSingleRecord(string path)
+        public void ViewSingleRecord(string path) //This method accesses a single file specified by the user.
         {
             string[] filePaths = Directory.GetFiles(@"D:\Student");
             foreach (string s in filePaths)

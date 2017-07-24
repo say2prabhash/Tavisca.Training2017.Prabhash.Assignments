@@ -8,7 +8,7 @@ namespace Assignment
 {
     class UserInput
     {
-        public void ReadUpdateValues()
+        public void ReadUpdateValues() //This method asks the user to enter the file name, field and value of the field to be updated.
         {
             Console.WriteLine("Enter the file name");
             string path = Console.ReadLine();
@@ -21,7 +21,7 @@ namespace Assignment
             UpdateRecord updation = new UpdateRecord();
             updation.RecordUpdation(path, field, value);
         }
-        public void ReadFilePath()
+        public void ReadFilePath() //This method asks the user to enter the file name.
         {
            
             Console.WriteLine("Enter the file name you want to view");

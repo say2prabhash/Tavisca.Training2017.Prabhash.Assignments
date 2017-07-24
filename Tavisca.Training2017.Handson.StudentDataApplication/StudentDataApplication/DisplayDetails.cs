@@ -8,7 +8,7 @@ namespace Assignment
 {
     class DisplayDetails
     {
-        public void FileDetails(StudentDetails studentdetails)
+        public void FileDetails(StudentDetails studentdetails) //This methods displays all the data about a student present in a file.
         {
             Console.WriteLine("First Name: {0}", studentdetails.firstName);
             Console.WriteLine("Last  Name:{0} ", studentdetails.lastName);

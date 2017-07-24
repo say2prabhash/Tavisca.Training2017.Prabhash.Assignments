@@ -11,7 +11,7 @@ namespace Assignment
 {
     class UpdateRecord
     {
-        public void RecordUpdation(string path,string key,string value)
+        public void RecordUpdation(string path,string key,string value) //This method updates a particular field of a file specified by the user.
         {
             string[] filePaths = Directory.GetFiles(@"D:\Student");
             foreach (string s in filePaths)

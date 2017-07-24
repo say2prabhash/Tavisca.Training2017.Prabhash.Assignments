@@ -10,7 +10,7 @@ namespace Assignment
     class DirectoryCreation
     {
         string directorypath = @"D:\Student";
-        public void CreateDirectory()
+        public void CreateDirectory() //This method creates a directory called "Student" in the specified path i.e. directorypath.
         {
             if (!Directory.Exists(directorypath))
             {

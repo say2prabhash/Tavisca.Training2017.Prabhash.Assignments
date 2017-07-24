@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Assignment
 {
     [Serializable()]
-    class StudentDetails : ISerializable
+    class StudentDetails : ISerializable //This class implements ISerializable interface to serialize the student data.
     {
         internal string firstName;
         internal string lastName;
@@ -37,7 +37,7 @@ namespace Assignment
             emergencyContact = (string)serializationinfo.GetValue("EmergencyContact:", typeof(string));
         }
 
-        public void InputDetails(string directorypath)
+        public void InputDetails(string directorypath) //This method asks the user to enter all the data about a student.
         {
             Console.WriteLine("Enter the students first name");
             this.firstName = Console.ReadLine();
@@ -45,8 +45,7 @@ namespace Assignment
             this.lastName = Console.ReadLine();
             Console.WriteLine("Enter the students mobile number");
             mobile = Console.ReadLine();
-            Validation validate = new Validation();
-            if (validate.ValidatePhoneNumber(mobile) == false)
+            if (Validation.ValidatePhoneNumber(mobile) == false)
             {
                 DisplayErrorMessage display = new DisplayErrorMessage();
                 display.DisplayWrongMobileNumber(mobile);
@@ -66,7 +65,7 @@ namespace Assignment
             }
             Console.WriteLine("Enter the student's emergency contact number");
             emergencyContact = Console.ReadLine();
-            if (validate.ValidatePhoneNumber(emergencyContact) == false)
+            if (Validation.ValidatePhoneNumber(emergencyContact) == false)
             {
                 DisplayErrorMessage display = new DisplayErrorMessage();
                 display.DisplayWrongMobileNumber(emergencyContact);
@@ -81,7 +80,7 @@ namespace Assignment
             }
         }
 
-        public void GetObjectData(SerializationInfo serializationinfo, StreamingContext context)
+        public void GetObjectData(SerializationInfo serializationinfo, StreamingContext context) //This method serializes all the data of the student.
         {
             serializationinfo.AddValue("FirstName:", this.firstName);
             serializationinfo.AddValue("LastName:", this.lastName);

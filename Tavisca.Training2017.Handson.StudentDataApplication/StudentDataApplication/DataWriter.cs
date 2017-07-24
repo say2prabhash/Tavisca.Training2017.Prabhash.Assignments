@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Assignment
 {
-    class DataWriter
+    class DataWriter 
     {
-        public void FileWriting(string path,StudentDetails studentdetails)
+        public void FileWriting(string path,StudentDetails studentdetails) //This methods writes the data of the student into the file using serialization process.
         {
             Stream stream = File.Open(path, FileMode.Create);
             BinaryFormatter bformatter = new BinaryFormatter();

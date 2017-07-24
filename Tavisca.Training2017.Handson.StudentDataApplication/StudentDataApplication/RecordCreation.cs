@@ -9,7 +9,7 @@ namespace Assignment
 {
     class RecordCreation
     {
-        public void CreateStudentFile(string path, StudentDetails studentdetails)
+        public void CreateStudentFile(string path, StudentDetails studentdetails ) //This method creates a file in the specified path.
         {
             if (!File.Exists(path))
             {
