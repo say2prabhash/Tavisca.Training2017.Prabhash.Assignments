@@ -17,6 +17,7 @@ namespace Assignment
                 Console.WriteLine("1. To create a record of a student 2.To view all the records 3. To view a particular record 4.To update a record 5. To exit");
                 int option;
                 int.TryParse(Console.ReadLine(), out option);
+                
                 switch (option)
                 {
                     case 1:

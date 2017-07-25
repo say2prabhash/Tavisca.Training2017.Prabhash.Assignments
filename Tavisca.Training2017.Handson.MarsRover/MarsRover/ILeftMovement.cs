@@ -8,6 +8,6 @@ namespace MarsRover
 {
     interface ILeftMovement
     {
-        bool Rover_is_moving_left(int x, int y);
+        bool Rover_is_moving_left(int x, int y,int n,int m);
     }
 }

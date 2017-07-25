@@ -45,6 +45,7 @@ namespace Assignment
             this.lastName = Console.ReadLine();
             Console.WriteLine("Enter the students mobile number");
             mobile = Console.ReadLine();
+
             if (Validation.ValidatePhoneNumber(mobile) == false)
             {
                 DisplayErrorMessage display = new DisplayErrorMessage();

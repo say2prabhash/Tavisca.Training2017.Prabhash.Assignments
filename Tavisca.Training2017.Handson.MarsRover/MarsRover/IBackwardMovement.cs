@@ -8,7 +8,7 @@ namespace MarsRover
 {
     interface IBackwardMovement
     {
-      bool Rover_is_moving_backward(int x, int y);
+      bool Rover_is_moving_backward(int x, int y,int n,int m);
        
     }
 }

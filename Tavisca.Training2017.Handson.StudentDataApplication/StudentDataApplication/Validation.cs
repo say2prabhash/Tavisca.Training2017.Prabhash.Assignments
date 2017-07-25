@@ -8,7 +8,7 @@ namespace Assignment
 {
     class Validation
     {
-        public static bool ValidatePhoneNumber(string mobilenumber) //This method validates the mobile number entered by the user and returns a boolean value.
+        public static bool ValidatePhoneNumber(string mobilenumber) //This method validates the mobile number.
         {
             if(mobilenumber.Length==10)
             {

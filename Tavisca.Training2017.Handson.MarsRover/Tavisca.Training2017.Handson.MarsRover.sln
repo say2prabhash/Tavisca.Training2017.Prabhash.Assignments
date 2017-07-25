@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.15
+VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsRover", "MarsRover\MarsRover.csproj", "{A1E2CEE0-A80D-4DE6-B8D6-C4CFF1EBE33A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsRoverTests", "MarsRoverTests\MarsRoverTests.csproj", "{F51ABCEC-28E4-4828-9F93-A015658E6E51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A1E2CEE0-A80D-4DE6-B8D6-C4CFF1EBE33A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1E2CEE0-A80D-4DE6-B8D6-C4CFF1EBE33A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1E2CEE0-A80D-4DE6-B8D6-C4CFF1EBE33A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F51ABCEC-28E4-4828-9F93-A015658E6E51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F51ABCEC-28E4-4828-9F93-A015658E6E51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F51ABCEC-28E4-4828-9F93-A015658E6E51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F51ABCEC-28E4-4828-9F93-A015658E6E51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
